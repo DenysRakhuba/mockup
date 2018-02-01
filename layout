@@ -1,0 +1,221 @@
+@using Sc.ViewModels.NotificationViewModels
+@using Newtonsoft.Json
+@inject SignInManager<Sc.Entity.ApplicationUser> SignInManager
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Sc.App</title>
+
+    <environment names="Development">
+        <!--     Fonts and icons     -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/index.css" />
+    </environment>
+    <environment names="Staging,Production">
+        <!--     Fonts and icons     -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+       
+    </environment>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="logo">
+                    <img src="~/images/nav-logo.png" style="padding:10px" alt="Creative Tim Logo" rel="tooltip" title="" data-placement="bottom" data-html="true">
+                </div>
+                @*<a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Sc.App</a>*@
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Solution" asp-action="Index">Market</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    @*<li><a asp-area="" asp-controller="Plan" asp-action="Index">Plans</a></li>*@
+
+                    @*@if (User.Identity.IsAuthenticated)
+                        {
+                            <li><a asp-area="" asp-controller="Home" asp-action="About">Billing Information</a></li>
+                            <li><a asp-area="" asp-controller="Plan" asp-action="Index">My Subscriptions</a></li>
+                        }*@
+                </ul>
+                @await Html.PartialAsync("_LoginPartial")
+            </div>
+        </div>
+    </nav>
+    @*<div class="section-space" style="height: 70px;display: block;"></div>*@
+    <div class="main section section-basic">
+        @RenderBody()
+
+        @if (!SignInManager.IsSignedIn(User))
+        {
+            <hr />
+            <div class="subscribe-line subscribe-line-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="title">Get Tips &amp; Tricks every Week!</h3>
+                            <p class="description">
+                                Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card-plain card-form-horizontal">
+                                <div class="content">
+                                    <form method="" action="">
+                                        <div class="row">
+                                            <div class="col-sm-8">
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="material-icons">mail</i>
+                                                    </span>
+                                                    <div class="form-group is-empty"><input type="email" value="" placeholder="Your Email..." class="form-control"><span class="material-input"></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <button type="button" class="btn btn-rose btn-round btn-block">Subscribe</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    @RenderSection("modal", false)
+
+    <footer class="footer">
+        <div class="container upper-footer">
+            <div class="row">
+                <div class="col-md-4 market">
+                    <h2> Market</h2>
+                    <ul>
+                        <li><a href="#">Sport</a></li>
+                        <li><a href="#">Medicine</a></li>
+                        <li><a href="#">Social</a></li>
+                        <li><a href="#">Transport</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Arrow</a></li>
+                        <li><a href="#">Legends</a></li>
+                        <li><a href="#">Super CRM</a></li>
+                        <li><a href="#">Legends</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 contacts">
+                    <h2> Contacts</h2>
+                    <ul>
+                        <li><img class="footer-icon" src="~/images/location.svg" />Israel, Hahashmonaim 121, 1st floor  </li>
+                        <li><img class="footer-icon" src="~/images/phone.svg" />+92 982 82 82,  +92 797 79 79</li>
+                        <li><img class="footer-icon" src="~/images/mail.svg" />crm@crm@42.com</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 account">
+                    <h2> My account</h2>
+                    <ul>
+                        <li><a href="#">Account Information</a> </li>
+                        <li><a href="#">Billing Information</a></li>
+                        <li><a href="#">My subscription</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container-fluid">
+            <div class="copyright text-center">
+                © @(DateTime.Now.Year), made with <i class="fa fa-heart heart"></i> by UpStart42
+            </div>
+        </div>
+    </footer>
+
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/knockout/dist/knockout.js"></script>
+        <script src="~/lib/knockout-validation/dist/knockout.validation.js"></script>
+        <script src="~/js/app/subscriptionsViewModel.js"></script>
+        <script src="~/js/material.min.js"></script>
+        <script src="~/js/material-kit.js"></script>
+        <script src="~/js/bootstrap-datepicker.js"></script>
+        <script src="~/js/nouislider.min.js"></script>
+        <script src="~/lib/remarkable-bootstrap-notify/bootstrap-notify.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="~/lib/knockout/dist/knockout.js" asp-append-version="true"></script>
+        <script src="~/lib/knockout-validation/dist/knockout.validation.js" asp-append-version="true"></script>
+        <script src="~/js/app/subscriptionsViewModel.js" asp-append-version="true"></script>
+        <script src="~/js/material.min.js" asp-append-version="true"></script>
+        <script src="~/js/material-kit.js" asp-append-version="true"></script>
+        <script src="~/js/bootstrap-datepicker.js" asp-append-version="true"></script>
+        <script src="~/js/nouislider.min.js" asp-append-version="true"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/lib/remarkable-bootstrap-notify/bootstrap-notify.min.js" asp-append-version="true"></script>
+    </environment>
+    @{
+        var notificationData = TempData["Notification"];
+    }
+    @if (notificationData != null)
+    {
+        var notification = JsonConvert.DeserializeObject<BootstrapNotificationViewModel>(notificationData.ToString());
+        switch (notification.Type)
+        {
+            case BootstrapNotificationType.SubscriptionJoin:
+                <script>
+                    $.notify({
+                    // options
+                    message: 'Awesome! Now you can use "@(notification.Data["PlanName"])". For details, go to my subscriptions.'
+                    }, {
+                    // settings
+                            type: 'success',
+                            mouse_over: 'pause',
+                            //animate.enter: 'fadeIn',
+                            //animate.exit: 'fadeOut',
+                    placement: {
+                        from: "bottom",
+                                align: "center"
+                            },
+                        });
+                </script>
+                break;
+        }
+    }
+    @RenderSection("scripts", required: false)
+</body>
+</html>
