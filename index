@@ -1,0 +1,295 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section class="slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Take your <span class="colored">team management</span> to the next level </h1> 
+                <h1 class="secondary"> Join the big player's club!</h1>
+                <br />
+                <br />
+                <p>
+                    CRM 42 Team Management Portal is a user-friendly, cloud-based software which helps you to manage all the team operations in one centralized platform
+                </p>
+                <button class="btn main-btn">Contact us</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="description">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-1 col-xs-3">
+                <img src="~/images/football.png" alt="Football" />
+                <p>football</p>
+            </div>
+            <div class="col-md-1 icon col-xs-3">
+                <img src="~/images/swimming.png" alt="Swimming" />
+                <p>swimming</p>
+            </div>
+            <div class="col-md-1 icon col-xs-3">
+                <img src="~/images/basketball.png" alt="Alternate Text" />
+                <p>basketball</p>
+            </div>
+            <div class="col-md-1 icon col-xs-3">
+                <img src="~/images/tennis.png" alt="Alternate Text" />
+                <p>tennis</p>
+            </div>
+            <div class="col-md-1 icon col-xs-3">
+                <img src="~/images/soccer.png" alt="Alternate Text" />
+                <p>soccer</p>
+            </div>
+            <div class="col-md-1 icon col-xs-3">
+                <img src="~/images/hockey.png" alt="Alternate Text" />
+                <p>hockey</p>
+            </div>
+            <div class="col-md-1 icon col-xs-3">
+                <img src="~/images/volleyball.png" alt="Alternate Text" />
+                <p>volleyball</p>
+            </div>
+            <div class="col-md-1 icon col-xs-3">
+                <img src="~/images/baseball.png" alt="Alternate Text" />
+                <p>baseball</p>
+            </div>
+            <div class="col-md-1 icon col-xs-12">
+                <img src="~/images/more.png" alt="Alternate Text" />
+                <p>more</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="video">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 video-wrapper">
+                <img src="~/images/video.png" class="img-responsive" alt="Alternate Text" />
+                <p>Video name 5:45</p>
+            </div>
+            <div class="col-md-7 video-description">
+                <div class="col-md-8 headline">
+                    <p>Keep your club organized online, we save time and every energy for you!</p>
+                </div>
+                <div class="col-md-4 text-center headline">
+                    <p>Watch the video</p>
+                </div>
+                <div class="col-md-12 content ">
+                    <p>
+                        Managing a team could also be a hassle free and easy activity.
+                        CRM42 is a web based platform with a user friendly interface, offering a comfortable and profitable experience while using it. Create your new management strategy and focus on getting the best results.
+                        Your goal is now our goal!
+                    </p>
+                    <p>
+                        CRM42 gives you a complete solution with a 360-degree view of your players, including complete management of their contracts, injuries, medicals, offers, past teams, even family members, bank accounts and all sponsors information.
+                        Accessible for your entire staff, anytime from anywhere.
+                    </p>
+                    <p>Let’s make something awesome together!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="benefits">
+    <div class="container text-center">
+        <h3>Managing your team has never been easier!</h3>
+        <div class="row">
+            <div class="col-md-3 ">
+                <h4>Players</h4>
+                <img src="~/images/players.png" alt="Alternate Text" />
+                <p>
+                    Manage team roster and member profiles easily with our amazing tool
+                </p>
+            </div>
+            <div class="col-md-3 ">
+                <h4>Teams</h4>
+                <img src="~/images/teams.png" alt="Alternate Text" />
+                <p>
+                    Save time and energy! Manage all your teams in one easy-to-use platform
+                </p>
+            </div>
+            <div class="col-md-3 ">
+                <h4>
+                    Practises & Games
+                </h4>
+                <img src="~/images/games.png" alt="Alternate Text" />
+                <p>
+                    Figuring out the “when and where” has never been easier. Schedule your games, practices, quickly and easily!
+                </p>
+            </div>
+            <div class="col-md-3 ">
+                <h4>
+                    Injuries &
+                    Medical records
+                </h4>
+                <img src="~/images/records.png" alt="Alternate Text" />
+                <p>
+                    Collect all the data about your player’s condition and medical records
+                </p>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 ">
+                <h4>
+                    Sponsors & Agents
+                </h4>
+                <img src="~/images/sponsors.png" alt="Alternate Text" />
+                <p>
+                    Manage all the sponsor and agent information with us
+                </p>
+            </div>
+            <div class="col-md-3 ">
+                <h4>
+                    Contacts
+                </h4>
+                <img src="~/images/contacts.png" alt="Alternate Text" />
+                <p>
+                    A full contact database that makes you easy to search, filter, and update
+                </p>
+            </div>
+            <div class="col-md-3 ">
+                <h4>
+                    Contracts
+                </h4>
+                <img src="~/images/contracts.png" alt="Alternate Text" />
+                <p>
+                    Get full visibility and handle all the contracts online with CRM42
+                </p>
+            </div>
+            <div class="col-md-3 ">
+                <h4>
+                    Reports
+                </h4>
+                <img src="~/images/reports.png" alt="Alternate Text" />
+                <p>
+                    Our wide range of reports help you to take your management skills to a next level
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h4>
+                    Sponsors & Agents
+                </h4>
+                <img src="~/images/treatments.png" alt="Alternate Text" />
+                <p>
+                    Manage all the sponsor and agent information with us
+                </p>
+            </div>
+            <div class="col-md-6 ">
+                <h2>And many more <span class="colored"> amazing </span> features ...</h2>
+            </div>
+            <div class="col-md-3 ">
+                <h4>
+                    Reports
+                </h4>
+                <img src="~/images/platform.png" alt="Alternate Text" />
+                <p>
+                    Our wide range of reports help you to take your management skills to a next level
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <h3>Make the most out of your team with us!</h3>
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Learn how to build ASP.NET apps that can run anywhere.
+                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    There are powerful new features in Visual Studio for building modern web apps.
+                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Bring in libraries from NuGet, Bower, and npm, and automate tasks using Grunt or Gulp.
+                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
+                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="container">
+    <div class="col-md-4">
+        <div class="card card-nav-tabs">
+            <div class="card-body">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-nav-tabs">
+            <div class="card-body">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-nav-tabs">
+            <div class="card-body">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
