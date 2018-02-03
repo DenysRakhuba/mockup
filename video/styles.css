@@ -1,0 +1,36 @@
+/* VIDEO */
+.video {
+    padding: 70px 0;
+    position: relative;
+    overflow-x:hidden;
+}
+.video .video-wrapper p {
+    font-size: 14px;
+    line-height: 30px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.video .description-wrapper h3 {
+    font-size: 20px;
+    line-height: 25px;
+}
+.video .description-wrapper .box {
+    padding: 10px 15px;
+}
+.bg-colored {
+    color: #fff;
+    background-color: #0b3b52;
+    position: relative;
+}
+
+.bg-colored:before {
+    right: -999em;
+    background:  #0b3b52;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 999em;
+    top: 0;
+    bottom: 0;
+}
